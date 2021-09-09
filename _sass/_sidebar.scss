@@ -6,8 +6,8 @@
   width: 14rem;
   visibility: hidden;
   overflow-y: auto;
-  color: var(--gray-900);
-  background-color: var(--orange);
+  color: var(--sidebar-color);
+  background-color: var(--sidebar-bg);
 }
 #sidebar, 
 #sidebar-toggle, 
@@ -44,7 +44,7 @@ body > div.container.content {
         top: calc((100% - 0.2rem)/2);
         height: calc(3rem/15);
         width: calc(4rem/2);
-        background: white;
+        background: var(--heading-color);
         border-radius: calc(0.2rem/2);
     }
     &::before,
