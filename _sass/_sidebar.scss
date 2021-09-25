@@ -6,9 +6,37 @@
   width: #{"min(17rem, 80%)"};
   visibility: hidden;
   overflow-y: auto;
-  color: var(--sidebar-color);
+  color: rgba(255,255,255,.6);
   background-color: var(--sidebar-bg);
+  a {
+    font-weight: normal;
+    color: var(--sidebar-color)
+  }
+  & > p {
+    padding: 1rem;
+    &:last-child {
+      margin-bottom: 0
+    }
+  }
+  & > nav {
+    border-bottom: 1px solid rgba(255,255,255,.1);
+    & > a,
+    & > span {
+      text-decoration: none;
+      display: block;
+      padding: .5rem 1rem;
+      border-top: 1px solid rgba(255,255,255,.1);
+    }
+    & > a.active,
+    & > a:hover,
+    & > a:focus {
+      text-decoration: none;
+      background-color: rgba(255,255,255,.1);
+      border-color: transparent;
+    }
+  }
 }
+
 #sidebar, 
 #sidebar-toggle, 
 #sidebar-toggle > span, 
