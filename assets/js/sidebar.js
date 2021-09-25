@@ -12,6 +12,7 @@
 			             target === checkbox || 
 			             toggle.contains(target)) return;
 
+		      e.preventDefault();
 		      checkbox.checked = false;
 		    }, false);
 })(document);
