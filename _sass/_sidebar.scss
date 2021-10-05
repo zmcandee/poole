@@ -91,7 +91,7 @@ body > div.container.content {
 
 #sidebar-toggle:hover,
 #sidebar-checkbox:focus ~ #sidebar-toggle {
-  border: var(--orange) solid 1px;
+  border: var(--accent-color) solid 1px;
 }
 
 #sidebar-checkbox:checked {
