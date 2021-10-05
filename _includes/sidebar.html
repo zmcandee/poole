@@ -1,0 +1,15 @@
+    <input type="checkbox" id="sidebar-checkbox"/> 
+    <label id="sidebar-toggle" for="sidebar-checkbox"><span></span></label> 
+    <div id="sidebar"> 
+      {{ site.data.main.nav-header|markdownify }}
+      <nav> 
+        {% for item in site.data.main.nav-items -%}
+           {% if item.url -%}
+             <a {% if page.url == item.url|relative_url %}class="active" {% endif -%} href="{{ item.url|relative_url }}">{{ item.title }}</a>
+           {% else -%}
+             <span>{{ item.title }}</span>
+           {% endif %}
+        {%- endfor %}
+      </nav> 
+      <p>&copy; {{ site.time | date: '%Y' }}. All rights reserved. </p> 
+    </div> 

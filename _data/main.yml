@@ -1,0 +1,12 @@
+nav-header: >
+  Brief welcome and description paragraph. Maybe a tagline and what not for easy reference.
+
+nav-items:
+ - url: /
+   title: Home
+ - title: Not a Link
+ - url: /about/
+   title: About
+ - title: Extra
+ - title: Google
+   url: https://www.google.com
