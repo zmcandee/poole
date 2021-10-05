@@ -71,7 +71,7 @@ body > div.container.content {
         display: block;
         margin: 0 auto;
         top: calc((100% - 0.2rem)/2);
-        height: calc(3rem/15);
+        height: calc(3rem/25);
         width: calc(4rem/2);
         background: var(--heading-color);
         border-radius: calc(0.2rem/2);
@@ -101,10 +101,12 @@ body > div.container.content {
 
         &::after {
           top: 0;
+	  height: calc(3rem/20);
           transform: rotate(45deg);
         }
         &::before {
           top: 0;
+	  height: calc(3rem/20);
           transform: rotate(135deg);
        }
     }
